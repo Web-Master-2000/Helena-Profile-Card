@@ -1,0 +1,160 @@
+/*  
+ Theme Name: Profile Card Page
+Theme URI: -
+Author:MasterWeb2000 Team
+Author URI: https:www.masterweb2000.com
+Description: Minamal Profile Card Page for using any website by MasterWeb2000 Team
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text mert furkan erguden
+*/
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+  height: 100vh;
+    
+ background-image: url(../img/bgimg.jpg); /* The image used */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; 
+    
+    
+  
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-card{
+  width: 400px;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+    border: 2px solid #000
+}
+
+.card-header{
+  background: #2c3a47;
+  padding: 60px 40px;
+}
+
+.pic{
+  display: inline-block;
+  padding: 10px;
+  background: linear-gradient(140deg, #007bff,#007bff);
+  margin: auto;
+  border-radius: 50%;
+  background-size: 200% 200%;
+  animation: animation 4s linear infinite;
+}
+
+@keyframes animation{
+  25%{
+    background-position: left bottom;
+  }
+  50%{
+    background-position: right right;
+  }
+  75%{
+    background-position: right top;
+  }
+  100%{
+    background-position: left top;
+  }
+}
+
+.pic img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.name{
+  color: #f2f2f2;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.desc{
+  font-size: 18px;
+  color: #007bff;
+}
+
+.icons{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.icons a{
+  color: #f2f2f2;
+  width: 56px;
+  font-size: 22px;
+  transition: .3s linear;
+}
+
+.icons a:hover{
+  color: #007bff;
+}
+
+.contact-btn{
+  display: inline-block;
+  padding: 12px 50px;
+  color: #007bff;
+  border: 1px solid ;
+  border-radius: 6px;
+  margin-top: 16px;
+  transition: .3s linear;
+}
+
+.contact-btn:hover{
+  background: #007bff;
+    border: 1px solid #fff;
+  color: #f2f2f2;
+}
+
+.card-footer{
+  background: #007bff;
+  padding: 50px 10px;
+color: #fff
+}
+
+.numbers{
+  display: flex;
+  align-items: center;
+}
+
+.item{
+  flex: 1;
+  text-transform: uppercase;
+  font-size: 13px;
+  color: #fff;
+}
+
+.item span{
+  display: block;
+  color: #fff;
+  font-size: 30px;
+text-decoration: underline;
+    cursor: pointer
+}
+
+.border{
+  width: 1px;
+  height: 30px;
+  background: #fff;
+}
+
